@@ -1,0 +1,6 @@
+/out/
+/rust/target/
+config.properties
+*.keystore
+*.apk
+*.idsig
