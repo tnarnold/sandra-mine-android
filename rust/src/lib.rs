@@ -160,9 +160,7 @@ fn status() -> String {
     .to_string()
 }
 
-fn redact(line: &str, address: &str) -> String {
-    if address.is_empty() { line.to_string() } else { line.replace(address, "…") }
-}
+use sandra_core::fmt::redact;
 
 /// The full config (including the address), for the app's own settings screen.
 fn config() -> String {
